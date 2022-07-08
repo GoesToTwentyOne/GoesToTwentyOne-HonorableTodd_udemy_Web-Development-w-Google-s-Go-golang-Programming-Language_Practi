@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Func in templates</title>
+</head>
+<body>
+<h1>All data</h1>
+<ul>
+    <h1>All data</h1>
+    {{range .}}
+    <li>{{  .Num }}</li>
+    {{end}}
+    <h1>All data Sum</h1>
+    {{range .}}
+    <li>{{ sxs .Num }}</li>
+    {{end}}
+    <h1>Odd data Sum</h1>
+    {{range .}}
+    <li>{{ sxso .Num }}</li>
+    {{end}}
+      <h1>Even data Sum</h1>
+    {{range .}}
+    <li>{{ sxse .Num }}</li>
+    {{end}}
+
+</ul>
+</body>
+</html>

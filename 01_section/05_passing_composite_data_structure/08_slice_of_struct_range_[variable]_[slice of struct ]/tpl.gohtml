@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>variable in templates</title>
+    </head>
+    <body>
+    <ul>
+    {{range .Be}}
+      <li> {{.Lager}} -- {{.Ale}} -- {{.Stout}} -- {{.Customers}}   </li>
+      {{end}}
+    </ul>
+    <ul>
+      {{range .Ca}}
+      <li> {{.Sedan}} -- {{.COUPE}} -- {{.SPORTS_CAR}} -- {{.Customers}}   </li>
+      {{end}}
+    </ul>
+
+</html>

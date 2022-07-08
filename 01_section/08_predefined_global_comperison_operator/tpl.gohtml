@@ -1,0 +1,71 @@
+{{/* eq
+	Returns the boolean truth of arg1 == arg2
+ne
+	Returns the boolean truth of arg1 != arg2
+lt
+	Returns the boolean truth of arg1 < arg2
+le
+	Returns the boolean truth of arg1 <= arg2
+gt
+	Returns the boolean truth of arg1 > arg2
+ge
+	Returns the boolean truth of arg1 >= arg2 */}}
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Date time formating</title>
+</head>
+<body>
+    <h1>Less then</h1>
+
+    <h1>
+     {{if lt .ComOneValue .ComTwoValue}}
+       comp1 < comp2
+     {{end}}
+    </h1>
+
+        <h1>Grater then</h1>
+
+    <h1>
+     {{if gt .ComOneValue .ComTwoValue}}
+       comp1 > comp2
+     {{end}}
+    </h1>
+
+    <h1>
+     {{if le .ComOneValue .ComTwoValue}}
+       comp1 <= comp2
+     {{end}}
+    </h1>
+    <h1>
+     {{if ge .ComOneValue .ComTwoValue}}
+       comp1 >= comp2
+     {{end}}
+    </h1>
+    <h1>
+    {{if ge .ComOneValue .ComTwoValue}}
+       comp1 >= comp2
+     {{end}}
+    </h1>
+
+    <h1>
+    {{if eq .ComOneValue .ComTwoValue}}
+       comp1 >= comp2
+     {{end}}
+    </h1>
+
+    <h1>
+    {{if ne .ComOneValue .ComTwoValue}}
+       comp1 >= comp2
+     {{end}}
+    </h1>
+ 
+ 
+ 
+
+    
+    
+</body>
+</html>

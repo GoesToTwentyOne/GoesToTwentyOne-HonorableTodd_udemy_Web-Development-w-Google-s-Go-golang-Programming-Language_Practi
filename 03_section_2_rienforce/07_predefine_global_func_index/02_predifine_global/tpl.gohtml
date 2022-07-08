@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Func in templates</title>
+</head>
+<body>
+{{.}}
+#Exam-1
+{{range .}}
+{{if and .Name .Age}}
+{{.Name}}--{{.Age}}
+{{end}}
+{{end}}
+#Exam-2
+{{range .}}
+{{if and .Name .Ltk}}
+{{.Name}}--{{.Age}}
+{{end}}
+{{end}}
+Exam-3
+{{range .}}
+{{if and .Name .Ltk}}
+{{.Name}}--{{.Age}}
+{{end}}
+{{end}}
+Exam-3
+{{ index . 2}}
+
+
+
+</body>
+</html>

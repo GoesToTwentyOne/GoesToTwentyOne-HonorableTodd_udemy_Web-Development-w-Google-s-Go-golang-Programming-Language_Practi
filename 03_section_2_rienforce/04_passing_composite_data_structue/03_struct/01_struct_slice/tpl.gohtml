@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>passing data into templates</title>
+    </head>
+    <body>
+        {{.Fall.Term}} {{.AcademicYear}}
+        <ul>
+        {{range .Fall.Courses}}
+        {{.}}
+        {{end}}
+ 
+        </ul>
+       
+    </body>
+</html>

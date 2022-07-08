@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <h1>{{.}}</h1>
+
+    {{.Fall.Term}}<br>
+    {{range .Fall.Courses}}
+    {{.Code}} - {{.Name}} - {{.Unit}}<br>
+    {{end}}
+
+    {{.Spring.Term}}<br>
+    {{range .Spring.Courses}}
+    {{.Code}}-{{.Name}}-{{.Unit}}<br>
+    {{end}}
+
+    {{.Summer.Term}} <br>
+    {{range .Summer.Courses}}
+    {{.Code}}--{{.Name}}--{{.Unit}} <br>
+    {{end}}
+
+
+ 
+    
+
+</body>
+</html>

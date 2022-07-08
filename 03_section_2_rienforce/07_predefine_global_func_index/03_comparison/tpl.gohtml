@@ -1,0 +1,39 @@
+{{/* eq
+	Returns the boolean truth of arg1 == arg2
+ne
+	Returns the boolean truth of arg1 != arg2
+lt
+	Returns the boolean truth of arg1 < arg2
+le
+	Returns the boolean truth of arg1 <= arg2
+gt
+	Returns the boolean truth of arg1 > arg2
+ge
+	Returns the boolean truth of arg1 >= arg2 */}}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Func in templates</title>
+</head>
+<body>
+{{.}}
+#Exmaple-1
+    {{range .}}
+    {{if ge .Num1 .Num2}}
+    {{.}}
+    {{end}}
+    {{end}}
+#Exmaple-2
+    {{range .}}
+    {{if le .Num1 .Num2}}
+    {{.}}
+    {{end}}
+    {{end}}
+#Exmaple-3
+    {{range .}}
+    {{if ne .Num1 .Num2}}
+    {{.}}
+    {{end}}
+    {{end}}
+</body>
+</html>

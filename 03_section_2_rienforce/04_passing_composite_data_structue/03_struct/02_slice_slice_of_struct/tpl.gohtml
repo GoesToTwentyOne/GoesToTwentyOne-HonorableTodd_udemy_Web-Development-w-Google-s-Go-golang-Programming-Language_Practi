@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>passing data into templates</title>
+    </head>
+    <body>
+        {{range .}}<br>
+            {{.Fall.Term}}{{.AcademicYear}}
+                {{range .Fall.Courses}}
+                {{.Code}}--{{.Name}}--{{.Units}}
+                {{end}}
+            {{.Spring.Term}}{{.AcademicYear}}
+                {{range .Spring.Courses}}
+                {{.Code}}--{{.Name}}--{{.Units}}
+                {{end}}
+            {{.Summer.Term}}{{.AcademicYear}}
+                {{range .Summer.Courses}}
+                {{.Code}}--{{.Name}}--{{.Units}}
+                {{end}}
+        {{end}}
+ 
+
+       
+    </body>
+</html>

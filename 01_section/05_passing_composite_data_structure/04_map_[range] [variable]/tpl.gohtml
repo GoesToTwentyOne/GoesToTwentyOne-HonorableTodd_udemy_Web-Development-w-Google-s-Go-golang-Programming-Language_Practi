@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>variable in templates</title>
+    </head>
+    <body>
+    <ul>
+        {{range $key,$value:=.}}
+        <li>{{$key}} -- {{$value}}</li>
+        {{end}}
+    </ul>
+</html>

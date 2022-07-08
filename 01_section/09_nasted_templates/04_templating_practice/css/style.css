@@ -1,0 +1,28 @@
+#header,#footer{
+    background: pink;
+    padding: 5px;
+    text-align: center;
+    text-decoration-color: aqua;
+    font-family: cursive;
+}
+#menu{
+    background: red;
+}
+#menu ul{
+    list-style: none;
+    padding: 5px;
+    
+}
+#menu ul li{
+    display: inline;
+    padding: 50px;
+}
+#content{
+    padding: 5px;
+    background: orange;
+}
+.details{
+    padding: 10px;
+    background: white;
+    
+}

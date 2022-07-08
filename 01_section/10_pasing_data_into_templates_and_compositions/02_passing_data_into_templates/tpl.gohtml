@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+    <h1>{{if   .LTK}}</h1>
+    <h1>{{.Name}}</h1>
+    {{else}}
+    <h1>{{.Name}}</h1>
+    <h1>{{end}}</h1>
+
+
+    <h1>{{if and  .LTK .LTK}}</h1>
+    <h1>{{.Name}}</h1>
+    {{else}}
+    <h1>{{.Name}}</h1>
+    <h1>{{end}}</h1>
+
+
+ 
+    
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slice of slice in templates</title>
+    </head>
+    <body>
+    <ul>
+      {{range .Ca}}
+      <li> {{.Sedan}} -- {{.COUPE}} -- {{.SPORTS_CAR}} -- {{.Customers}}   </li>
+      {{end}}
+    </ul>
+    
+    <ul>
+    {{range .Bi}}
+    <li> {{.Road}} -- {{.Mountain}} -- {{.Quantity}} -- {{.CustomersIn}}   </li>
+    {{end}}
+    </ul>
+
+</html>
+
+
+

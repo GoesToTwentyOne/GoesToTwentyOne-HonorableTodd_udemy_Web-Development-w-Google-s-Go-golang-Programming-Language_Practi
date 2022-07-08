@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>submited</title>
+</head>
+<html>
+<body>
+
+<h2>Forms Handling</h2>
+<p><strong>variable names(identifiers)</strong> and <em>values</em></p>
+{{range $key,$values:= .}}
+    <main>
+    <p> <strong>{{$key}}</strong></p>
+    <ul>{{range $values}} <li><em>{{.}}</em></li>{{end}}</ul>
+
+    </main>
+{{end}}
+
+<form action="/"  method ="POST">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+  <label for="lname">Age:</label><br>
+  <input type="text" id="lname" name="fage" placeholder="Age in Text"><br><br>
+  <input type="submit" placeholder="Submit Form" value="Form Submitted">
+</form> 
+
+</body>
+</html>

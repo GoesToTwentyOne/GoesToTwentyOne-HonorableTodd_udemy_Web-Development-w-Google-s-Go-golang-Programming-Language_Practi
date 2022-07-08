@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slice of slice in templates</title>
+    </head>
+    <body>
+    <ul>
+      {{range .Ca}}
+      <li> {{us .Customers}}   </li>
+      {{end}}
+    </ul>
+    
+    <ul>
+    {{range .Bi}}
+    <li> {{ ftl .CustomersIn}}   </li>
+    {{end}}
+    </ul>
+
+</html>
+
+
+

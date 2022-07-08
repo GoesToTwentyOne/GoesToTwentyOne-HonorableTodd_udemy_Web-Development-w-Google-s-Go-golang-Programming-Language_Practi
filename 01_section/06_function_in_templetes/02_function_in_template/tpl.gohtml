@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Function in Templates</title>
+</head>
+
+<body>
+	<section>
+	
+		<article>
+			<header>
+				<h2>Western Loved Wear (Girls)</h2>
+			</header>
+            <ul> 
+            {{range .WearGirl}}
+                <li> 	{{US .CowgirlLoved}}  {{US .PartywearLove}}    {{US .SleeveLove}} </li>
+            {{end}}
+            </ul>
+			
+		</article>
+        	<article>
+			<header>
+				<h2>Western Loved Wear (Boys)</h2>
+			</header>
+            <ul> 
+            {{range .WearBoy}}
+                <li> 	{{FTS .CowboyLoved}}  {{FTS .HatLove}}    {{FTS .ShirtLove}} </li>
+            {{end}}
+            </ul>
+			
+		</article>
+	</section>
+	<footer>
+		<p>Copyright 2021 @nihadgo</p>
+	</footer>
+
+</body>
+
+</html>

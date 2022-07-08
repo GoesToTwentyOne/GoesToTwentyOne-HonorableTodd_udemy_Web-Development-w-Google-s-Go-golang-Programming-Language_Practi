@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date time formating</title>
+</head>
+<body>
+# All pieces data
+    <h1> {{.}}</h1>
+    # All pieces range  data
+    <h1> 
+    {{range .}}
+        {{.}}
+    {{end}}
+    </h1>
+#  conditional  pieces data
+<h1>  
+{{range .}}
+    {{if  .Admin}}
+        {{.}}
+    {{end}}
+{{end}}
+</h1>
+#  conditional  pieces data and predefinded global func and
+{{range .}}
+    {{if   and  .Name .Admin}}
+        {{.Name}}
+        {{.Admin}}
+        {{.Expert}}
+        
+    {{end}}
+{{end}}
+</h1>
+
+    
+    
+</body>
+</html>
